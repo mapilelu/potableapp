@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mapilelu.potable_001"
+    android:versionCode="7"
+    android:versionName="1.6" 
+    android:installLocation="auto" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <!-- Required permission to check licensing. -->
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <!-- la lista de permisos está aquí:
+    http://developer.android.com/reference/android/Manifest.permission.html -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. 
+     -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<!-- Allows an app to access precise location from location sources such as GPS, cell towers, and Wi-Fi. -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<!-- Allows an application to access extra location provider commands -->
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+	<!-- Allows an application to create mock location providers for testing -->
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+	
+	<!-- Allows an application to write to external storage. -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	
+	
+	<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+        <!-- ** You need to replace the key below with your own key. **
+         The example key below will not be accepted because it is not linked to the
+         certificate which you will use to sign this application.
+         See: https://developers.google.com/maps/documentation/android/start
+         for instructions on how to get your own key. -->
+	    <meta-data 
+	        android:name="com.google.android.maps.v2.API_KEY"
+	    	android:value="AIzaSyDUiD6Pxii5iZSvMQFAqTiEJg-qI0YMNL4"/>
+	    <meta-data
+	            android:name="com.google.android.gms.version"
+	            android:value="@integer/google_play_services_version" />
+	    <activity
+	            android:name="controller.mapilelu.potable_001.MainActivity_controller"
+	            android:label="@string/app_name" >
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />
+	                <category android:name="android.intent.category.LAUNCHER" />
+	            </intent-filter>
+	    </activity>
+	    <activity
+	            android:name="controller.mapilelu.potable_001.FormActivity_controller"
+	            android:label="@string/app_name" >
+	    </activity>
+	    <activity
+	            android:name="controller.mapilelu.potable_001.ListActivity_controller"
+	            android:label="@string/app_name" >
+	    </activity>
+	    <activity
+		      android:name="controller.mapilelu.potable_001.MapActivity_controller"
+		      android:label="@string/app_name" />    	
+
+    </application>
+
+</manifest>

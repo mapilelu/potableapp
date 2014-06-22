@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:onClick="showMap"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity_controller" >
+
+    <LinearLayout
+        android:id="@+id/lytMainBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgPotable"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ImageView02"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:background="#00BFFF"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_width="0dip"
+            android:layout_height="74dp"
+            android:layout_marginTop="126dp"
+            android:layout_weight="0.05"
+            android:background="#BEF781"
+            android:onClick="onClickButtonNew"
+            android:text="@string/new_" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPotable"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:layout_above="@+id/lytMainBottom"
+        android:layout_alignParentLeft="true"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:longClickable="false"
+        android:src="@drawable/azul" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ImageView01"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:longClickable="true"
+        android:onClick="onClickAboutApp"
+        android:src="@drawable/azul" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:layout_alignTop="@+id/imgPotable"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:longClickable="false"
+        android:src="@drawable/azul" />
+
+    <TextView
+        android:id="@+id/txtDefinition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgPotable"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/definition"
+        android:text="@string/definition"
+        android:textColor="#2E64FE"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/lytMainTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:background="#CEF6F5"
+            android:onClick="onClickButtonView"
+            android:text="@string/list" />
+
+        <ImageButton
+            android:id="@+id/btnMap"
+            android:layout_width="108dp"
+            android:layout_height="66dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/map"
+            android:onClick="onClickButtonMap"
+            android:scaleType="fitEnd"
+            android:src="@drawable/gmapsbutton"
+            android:text="@string/map" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+Nuevo: 
+· SD: auto
+· layout large, small, drawables
+
+ToDo:
+· try/catch

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="allow">Permitir</string>
+	<string name="dont_allow">No permitir</string>
+
+	
+    
+    <string name="definition">(Del lat. potabĭlis). adj. Que se puede beber.</string>
+    
+    <string name="new_">Registra una nueva fuente</string>
+    <string name="view">Ver</string>
+    <string name="list">Lista de fuentes</string>
+    
+    <string name="about">Sobre Potable App</string>
+    
+    <string name="today">Junio 2014</string>  
+    
+    <string name="on">SÍ funciona</string>
+    <string name="off">NO funciona</string>
+    
+    <string name="notes">Notas</string>
+    <string name="empty_list">No hay fuentes guardadas</string>
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="element_name">Nombre de la fuente</string>
+    <string name="tap">Sin grifo</string>
+    <string name="other">Otro</string>
+    <string name="save">Guardar</string>
+    <string name="delete">Borrar</string>
+    <string name="edit">Editar</string>
+    <string name="map">Mapa</string>
+    
+    
+      
+    <string name="latitude">Latitud</string>
+    <string name="longitude">Longitud</string>
+    <string name="saving">Guardando</string>
+    <string name="nogpsconnection">Sin conexión GPS</string>
+    <string name="nowificonnection">Sin conexión wifi</string>
+    
+    <string name="my_location">Aquí estoy</string>
+	<string name="mylocation_button">Busca dónde estoy</string>
+
+</resources>
+
+    
+    

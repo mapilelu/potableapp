@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="allow">Allow</string>
+	<string name="dont_allow">Do not allow</string>
+
+	<string name="error">Error</string>
+    <string name="app_name">Potable</string>
+    <string name="definition">/ˈpəʊtəb(ə)l/ Safe to drink; drinkable</string>
+    
+    <string name="new_">Register a New Fountain</string>
+    <string name="view">View</string>
+    <string name="list">View List</string>
+    <string name="about">About Potable App</string>
+    <string name="author">María Pilar Lebrancón Luna</string>
+    <string name="email">potable.app@gmail.com</string>
+    <string name="facebook">facebook.com/potableapp</string>
+    <string name="google">plus.google.com/potableapp</string>
+    <string name="today">June 2014</string>    
+    
+    <string name="on">OH, YES!</string>
+    <string name="off">It does NOT work</string>
+    
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="notes">Notes</string>
+    <string name="empty_list">Empty Database</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="element_name">Fountain Name</string>
+    <string name="tap">No tap</string>
+    <string name="other">Other</string>
+    <string name="save">Save</string>
+    <string name="saving">Saving</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="map">Map</string>
+    <string name="nogpsconnection">No GPS connection</string>
+    <string name="nowificonnection">No Wifi connection</string>
+    
+    <string name="my_location">My Location</string>
+	<string name="mylocation_button">Find My Location</string>
+
+    
+    
+
+</resources>
